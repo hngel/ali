@@ -269,7 +269,7 @@ function isYoutube(str) {
     return str.toLowerCase().indexOf('youtube.com') > -1;
 }
  client.on('message', message => {
-     if (message.content === prefix +"music help") {
+     if (message.content === "^"+"music help") {
     const embed = new Discord.RichEmbed()
      .setColor("#9a21df")
      .addField(`**__أوامر البوت__**`,`
