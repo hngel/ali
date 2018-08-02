@@ -9,9 +9,8 @@ const fetchVideoInfo = require('youtube-info');
 
 const yt_api_key = "AIzaSyDeoIH0u1e72AtfpwSKKOSy3IPp2UHzqi4";
 const prefix = '^';
-
- 
-client.login(process.env.BOT_TOKEN);
+const discord_token = "BOT_TOKEN";
+client.login(discord_token);
  
 client.on('ready', function() {
     console.log(`i am ready ${client.user.username}`);
@@ -269,7 +268,7 @@ function isYoutube(str) {
     return str.toLowerCase().indexOf('youtube.com') > -1;
 }
  client.on('message', message => {
-     if (message.content === "^"+"music help") {
+     if (message.content === "^"+"music") {
     const embed = new Discord.RichEmbed()
      .setColor("#9a21df")
      .addField(`**__أوامر البوت__**`,`
