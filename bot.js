@@ -1172,5 +1172,19 @@ Rocket.on('message', msg => {
               message.author.sendEmbed(Embed11)
             }
           });
-        
+        client.on("message", (message) => {
+  if (message.content.startsWith(".")) {
+    message.channel.send("لبى الي ينقط ينآسس");
+  }
+});
+client.on("message", (message) => {
+  if (message.content.startsWith("السلام عليكم")) {
+    message.channel.send("وعليكم السلام ورحمة الله وبركاته");
+  }
+});
+client.on("message", (message) => {
+  if (message.content.startsWith("هاي")) {
+    message.channel.send("هآيآت");
+  }
+});
     Rocket.login(process.env.BOT_TOKEN);
