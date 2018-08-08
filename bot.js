@@ -351,7 +351,7 @@ Rocket.on('message', message => {//help msg
   ❖${prefix}** qstop ** ==>**لـ أيقاف تشغيل البوت**
 
 
-  By : .Nikolaiyy#2121 | **شكراََ لكم لاستعمال البوت**
+  By : .Nikolai#8388 | **شكراََ لكم لاستعمال البوت**
   `);
 
   }
